@@ -1,0 +1,22 @@
+<!-- <h4>{{todo.task | titlecase}}</h4>
+<p class="text-primary">{{todo.desc | titlecase}}</p>
+<button class="btn btn-danger" (click)="onclick(todo)">Delete</button> -->
+
+<table class="table table-bordered table-stripped">
+    <thead>
+        <tr class="text-center">
+            <th>Task Name</th>
+            <th>Task Description</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="text-center">
+            <th>{{todo.task | titlecase}}</th>
+            <th>{{todo.desc | titlecase}}</th>
+            <th><button class="btn btn-danger" (click)="onclick(todo)">Delete</button></th>
+            <!-- <th><button class="btn btn-danger text-warning"><a [routerLink]="['view']">View</a></button></th> -->
+
+        </tr>
+    </tbody>
+</table>

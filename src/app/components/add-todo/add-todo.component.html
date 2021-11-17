@@ -1,0 +1,45 @@
+<!-- <div class="my-3">
+  <h4 class="bg-primary py-2 px-4" style="color: aliceblue;">Add a Task</h4>
+  <form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="name" class="form-label">Task Name</label>
+      <input type="text" [(ngModel)]="name" name="name" class="form-control" id="name" >
+    </div>
+    <div class="mb-3">
+      <label for="desc" class="form-label">Task Description</label>
+      <input type="text" [(ngModel)]="desc" name="desc" class="form-control" id="desc">
+    </div>
+    <button type="submit" class="btn btn-primary">Add Task </button>
+  </form>
+</div> -->
+
+<div class="border border-3 border-primary"> 
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+         Add a New Task
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">
+          <div class="my-3 ">
+            <!-- <h4 class="bg-primary py-2 px-4" style="color: aliceblue;">Add a Task</h4> -->
+            <form (ngSubmit)="onSubmit()">
+              <div class="mb-3">
+                <label for="name" class="form-label">Task Name</label>
+                <input type="text" [(ngModel)]="name" name="name" class="form-control" id="name" >
+              </div>
+              <div class="mb-3">
+                <label for="desc" class="form-label">Task Description</label>
+                <input type="text" [(ngModel)]="desc" name="desc" class="form-control" id="desc">
+              </div>
+              <button type="submit" class="btn btn-primary">Add Task </button>
+            </form>
+          </div>
+        </div>
+    </div>
+   
+    
+  </div>
+</div>
